@@ -78,6 +78,11 @@ section {
   background-size: 80%
 }
 
+#dynaup {
+  background-color: #3c3c3c;
+  background-size: 80%
+}
+
 #error_404 {
   background-color: #151515;
 }
