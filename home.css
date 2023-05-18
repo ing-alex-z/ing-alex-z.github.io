@@ -61,7 +61,7 @@ section {
 #work {
   /* background-color: #888; */
   background-color: #f8f9fa;
-  height: 100vh;
+  height: 150vh;
   /* scroll-margin-top: 25px; */
 }
 
@@ -81,6 +81,11 @@ section {
 #dynaup {
   background-color: #3c3c3c;
   background-size: 80%
+}
+
+#bachelor_thesis {
+  /* background-color: #3c3c3c;
+  background-size: 80% */
 }
 
 #error_404 {
@@ -174,10 +179,10 @@ a:link, a:visited, a:active {
   color: #000000;
 }
 
-a2:link, a:visited, a:active {
+/* a2:link, a:visited, a:active {
   text-decoration: none;
   color: #92999f;
-}
+} */
 
 a:hover {
   text-decoration: underline;
@@ -761,4 +766,25 @@ div.social-links {
 @mixin flag-gbr() {
   @include ratio(1 / 2);
   @include union-jack();
-};
+}
+
+/* Gradient color1 - color2 - color1 */
+
+hr.style-one {
+  /*border: 10;*/
+  height: 10px;
+  color: #333;
+  /*background-image: linear-gradient(to right, #ccc, #333, #ccc);*/
+}
+
+.blur-rule {
+  height: 1px;
+  width: 100%;
+  background-color: #dedede;
+  margin: 2em 4em;
+  display: block;
+  
+  -webkit-box-shadow: 0 0 4px 0 #666;
+  -moz-box-shadow: 0 0 4px 0 #666;
+  box-shadow: 0 0 4px 0 #666;
+}
