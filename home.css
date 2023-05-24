@@ -537,7 +537,7 @@ footer p {
   margin-bottom: 40px;
 }
 
-.polaroid{
+.polaroid {
     text-align:center;
     display:inline-block;
     list-style:none;
@@ -554,9 +554,7 @@ footer p {
     font-family: 'Homemade Apple', cursive;
     font-size:20px;
     color:#000;<
-  }
-
-.polaroid2{
+    width: 100px;
   }
 
 .polaroid1:nth-child(1){
@@ -638,6 +636,11 @@ footer p {
   text-transform: capitalize;
 }
 
+@media (max-width: 767.98px) {
+  .polaroid .polaroid1 {
+    width: 100px;
+  }
+}
 
 
 
