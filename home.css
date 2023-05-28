@@ -33,7 +33,7 @@ body {
 }
 
 section {
-  height: 100vh;
+  min-height: 100vh;
   
 
 }
@@ -54,14 +54,14 @@ section {
 #about {
   background-color: #555;
   background-size: 80%;
-  height: 120vh;
+  /* height: 120vh; */
     
 }
 
 #work {
   /* background-color: #888; */
   background-color: #f8f9fa;
-  height: 150vh;
+  /* height: 150vh; */
   /* scroll-margin-top: 25px; */
 }
 

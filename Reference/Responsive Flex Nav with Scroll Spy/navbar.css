@@ -1,32 +1,4 @@
-$color-primary: #f857a8;
-$color-secondary: #ff5858;
-$color-neutral-lt: #fff;
-$color-neutral-med: #ddd;
-$color-neutral-dk: #444;
-$a-tags: "a, a:active, a:hover, a:visited";
-$a-tags-no-hov: "a:link, a:visited, a:active";
-$headings-font: "Saira Semi Condensed", sans-serif;
-$shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
-
-@mixin main-gradient {
-  background: $color-primary;
-  background: -webkit-linear-gradient(45deg, $color-primary, $color-secondary);
-  background: linear-gradient(45deg, $color-primary, $color-secondary);
-}
-
-@mixin shadow-box {
-  background-color: $color-neutral-lt;
-  box-shadow: $shadow;
-}
-
-@mixin skew {
-  transform: skew(-20deg);
-}
-
-@mixin unskew {
-  transform: skew(20deg);
-}
-
+/*-----------------------START NAVBAR-----------------------*/
 /*-------------Reset-------------*/
 button {
   background: none;
@@ -73,11 +45,11 @@ section {
 
 /*-------------Helpers-------------*/
 .skew {
-  @include skew;
+  transform: skew(-20deg);
 }
 
 .un-skew {
-  @include unskew;
+  transform: skew(20deg);
 }
 
 /*-------------Nav-------------*/
@@ -92,17 +64,17 @@ section {
 }
 
 #nav {
-  @include shadow-box;
+  background-color: #fff;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-  font-family: $headings-font;
+  font-family: "Saira Semi Condensed", sans-serif;
   height: 4em;
   overflow: hidden;
-
-  &.nav-visible {
-    height: 100%;
-    overflow: auto;
-  }
+}
+#nav.nav-visible {
+  height: 100%;
+  overflow: auto;
 }
 
 .nav {
@@ -118,41 +90,42 @@ section {
 }
 
 span.gradient {
-  @include main-gradient;
+  background: #f857a8;
+  background: -webkit-linear-gradient(45deg, #f857a8, #ff5858);
+  background: linear-gradient(45deg, #f857a8, #ff5858);
   padding: 0 1em;
   position: relative;
   right: 1em;
   margin-right: auto;
-
-  &:hover {
-    animation-name: logo-hover;
-    animation-duration: 0.3s;
-    animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(0.17, 0.57, 0.31, 0.85);
-  }
+}
+span.gradient:hover {
+  animation-name: logo-hover;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.17, 0.57, 0.31, 0.85);
 }
 
 h1.logo {
   font-weight: 300;
   font-size: 1.75em;
   line-height: 0.75em;
-  color: $color-neutral-lt;
+  color: #fff;
 }
 
-h1.logo #{$a-tags} {
+h1.logo a, a:active, a:hover, a:visited {
   text-decoration: none;
-  color: $color-neutral-lt;
+  color: #fff;
 }
 
 .nav-link {
   text-transform: uppercase;
   text-align: center;
-  border-top: 0.5px solid $color-neutral-med;
+  border-top: 0.5px solid #ddd;
 }
 
-#{$a-tags-no-hov} {
+a:link, a:visited, a:active {
   text-decoration: none;
-  color: $color-primary;
+  color: #f857a8;
 }
 
 a:hover {
@@ -166,7 +139,7 @@ a:hover {
 }
 
 .btn-nav {
-  color: $color-primary;
+  color: #f857a8;
   padding-left: 2em;
   padding-right: 2em;
 }
@@ -198,35 +171,33 @@ a:hover {
     display: none;
   }
 
-  .nav #{$a-tags-no-hov} {
-    &.active {
-      @include main-gradient;
-      color: #fff;
-    }
+  .nav a:link.active, a:visited.active, a:active.active {
+    background: #f857a8;
+    background: -webkit-linear-gradient(45deg, #f857a8, #ff5858);
+    background: linear-gradient(45deg, #f857a8, #ff5858);
+    color: #fff;
   }
 
   .nav-link-span {
-    @include unskew;
+    transform: skew(20deg);
     display: inline-block;
   }
 
   .nav-link {
-    @include skew;
+    transform: skew(-20deg);
     color: #777;
     text-decoration: none;
-
-    &:last-child {
-      padding-right: 3em;
-    }
+  }
+  .nav-link:last-child {
+    padding-right: 3em;
   }
 
   a:hover.nav-link:not(.active) {
-    color: $color-neutral-dk;
-    background: $color-neutral-med;
-    background: linear-gradient(45deg, $color-neutral-lt, #ddd);
+    color: #444;
+    background: #ddd;
+    background: linear-gradient(45deg, #fff, #ddd);
   }
 }
-
 @keyframes logo-hover {
   20% {
     padding-right: 0em;
@@ -235,3 +206,4 @@ a:hover {
     padding-right: 5em;
   }
 }
+/*-----------------------END NAVBAR-----------------------*/

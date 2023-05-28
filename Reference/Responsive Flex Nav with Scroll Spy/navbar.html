@@ -5,6 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="all.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Open+Sans:400,500|Saira+Semi+Condensed:300,500&display=swap">
+
+  
 </head>
 
 <body>
@@ -36,6 +41,47 @@
 
     </section>
   </main>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+      <script id="rendered-js" >
+var util = {
+  mobileMenu() {
+    $("#nav").toggleClass("nav-visible");
+  },
+  windowResize() {
+    if ($(window).width() > 800) {
+      $("#nav").removeClass("nav-visible");
+    }
+  },
+  scrollEvent() {
+    var scrollPosition = $(document).scrollTop();
+
+    $.each(util.scrollMenuIds, function (i) {
+      var link = util.scrollMenuIds[i],
+      container = $(link).attr("href"),
+      containerOffset = $(container).offset().top,
+      containerHeight = $(container).outerHeight(),
+      containerBottom = containerOffset + containerHeight;
+
+      if (scrollPosition < containerBottom - 20 && scrollPosition >= containerOffset - 20) {
+        $(link).addClass("active");
+      } else {
+        $(link).removeClass("active");
+      }
+    });
+  } };
+
+
+$(document).ready(function () {
+
+  util.scrollMenuIds = $("a.nav-link[href]");
+  $("#menu").click(util.mobileMenu);
+  $(window).resize(util.windowResize);
+  $(document).scroll(util.scrollEvent);
+
+});
+//# sourceURL=pen.js
+    </script>
 
 </body>
 
