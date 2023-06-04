@@ -207,6 +207,7 @@ hr {
   border: 0;
   border-top: var(--bs-border-width) solid;
   opacity: 0.25;
+  
 }
 
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {

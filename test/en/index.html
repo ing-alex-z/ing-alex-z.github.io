@@ -15,10 +15,8 @@
 <!-- Riferimenti ai CSS -->
  <link rel="stylesheet" href="../bootstrap.css">
  <link rel="stylesheet" href="../all.css">
+ <link rel="stylesheet" href="../flag-icon.css">
  <link rel="stylesheet" href="../main.css">
-
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.3/css/flag-icon.min.css">
-
 
 </head>
 
@@ -34,7 +32,7 @@
         <a href="#about" class="nav-link bk_bg"><span class="nav-link-span"><span class="u-nav">About</span></span></a>
         <a href="#portfolio" class="nav-link bk_bg"><span class="nav-link-span"><span class="u-nav">Portfolio</span></span></a>
         <a href="#contacts" class="nav-link bk_bg"><span class="nav-link-span"><span class="u-nav">Contacts</span></span></a>
-        <a href="../it/index.html"class="nav-link"><span class="nav-link-span"><span class="flag-icon flag-icon-it"></span></span></a>
+        <a id="dynamicLink" class="nav-link"><span class="nav-link-span"><span class="flag-icon flag-icon-it"></span></span></a>
       </div>
       
     </nav>
@@ -52,8 +50,12 @@
         <h6 class="header-mono" >Mechanical engineer | Everything else</h6>
         <br>
         <br>
-        <!-- <br> -->
-        <h4>⚠ WORK IN PROGRESS ⚠</h4>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        <h5>⚠ WEBSITE UNDER CONSTRUCTION ⚠</h5>
        </div>
      </header>
 
@@ -61,8 +63,41 @@
 
 
     <section id="about">
+  <div class="container">
+    <div class="row">
+      <div class="footer-about album-text">
+        <h1 class="album">About me</h1>
+        <br>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque velit, varius vel mauris ac, egestas dapibus velit. Nulla vel egestas est. Aliquam ac turpis interdum, eleifend sem id, porta purus. Donec pharetra neque eu sodales laoreet. Suspendisse et maximus libero, quis pretium enim. Quisque eleifend est ut ante volutpat, ut blandit purus placerat. Nunc cursus nulla justo, sed ultricies ante tempor nec. Mauris tempus arcu vitae nisl cursus, nec facilisis tortor elementum. Sed interdum, enim nec mollis semper, lorem urna efficitur neque, in mollis erat est quis lacus. Vestibulum ex ligula, posuere a nunc ac, auctor sollicitudin justo.</p>
+          <br>
+        <p>  Duis nec purus quis turpis luctus posuere vel a purus. In varius in dui a fermentum. Suspendisse potenti. Cras ante felis, rutrum et tellus in, viverra rutrum turpis. Nulla eget tellus sed ex congue condimentum. Mauris interdum, massa nec eleifend tristique, neque justo pharetra enim, fermentum auctor nunc lectus ut lacus. Nullam eu sem in enim mollis egestas ut ac arcu. Morbi faucibus augue ex, ut rutrum elit mollis ut. Curabitur elementum varius viverra.</p>
+    </div>
 
-      <img src="../../images/work_in_progress.png" width=800/>
+      <div class="photo-album">
+		
+        <!-- <h1><span>Nat <abbr title="and" class="amp">&amp;</abbr> Simon in New Zealand</span></h1> -->
+        
+        <a href="../images/800px/fiori_800.jpg"class="large polaroid img1"><img src="../images/800px/fiori_800.jpg" alt=""></a>
+        <a href="../images/800px/fiat_800.jpg" class="large polaroid img2"><img src="../images/800px/fiat_800.jpg" alt=""></a>
+        <a href="../images/800px/mess_800.jpg" class="large polaroid img3"><img src="../images/800px/mess_800.jpg" alt=""></a>
+        <a href="../images/800px/frecce_800.jpg" class="large polaroid img4"><img src="../images/800px/frecce_800.jpg" alt=""></a>
+        <a href="../images/800px/merzario_800.jpg" class="large polaroid img5"><img src="../images/800px/merzario_800.jpg" alt=""></a>
+        <a href="../images/800px/minardi_800.jpg" class="large polaroid img6"><img src="../images/800px/minardi_800.jpg" alt=""></a>
+        <a href="../images/800px/gp2_800.jpg" class="large polaroid img7"><img src="../images/800px/gp2_800.jpg" alt=""></a>
+        <a href="../images/800px/kart_800.jpg" class="large small polaroid img8"><img src="../images/800px/kart_800.jpg" alt=""></a>
+        <a href="../images/800px/imola_800.jpg" class="large polaroid img9"><img src="../images/800px/imola_800.jpg" alt=""></a>
+        <!--<a href="" class="polaroid img10"><img src="http://media.24ways.org/2009/14/img/whiteisland.jpg" alt=""></a>
+        <a href="" class="small polaroid img11"><img src="http://media.24ways.org/2009/14/img/sulphur.jpg" alt=""></a>
+        <a href="" class="small polaroid img12"><img src="http://media.24ways.org/2009/14/img/sealions.jpg" alt=""></a>
+        <a href="" class="small polaroid img13"><img src="http://media.24ways.org/2009/14/img/horses.jpg" alt=""></a>
+        <a href="" class="small polaroid img14"><img src="http://media.24ways.org/2009/14/img/camping.jpg" alt=""></a>
+        <a href="" class="polaroid img15"><img src="http://media.24ways.org/2009/14/img/us.jpg" alt=""></a>
+     -->
+      </div>
+    </div>
+  </div>
+
+      
 
     </section>
 
@@ -76,13 +111,13 @@
           <div class="row">
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
-                <img class="card-img-top" src="../images/DynaUP800.jpg" alt="DynaUPWheel Project">
+                <img class="card-img-top" src="../images/800px/dynaup_800.jpg" alt="DynaUPWheel Project">
                 <div class="card-body">
                   <hr style='margin-top:-1em'>
                   <p class="card-text"><strong>Master's thesis - DynaUPWheel Project</strong><br><br>Development of an innovative instrumented wheelchair handrim</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <a href="dynaup.html"><button type="submit" class="btn btn-sm inactive-btn-outline-secondary card-btn">Coming soon</button></a>
+                      <a href=#portfolio><button type="submit" class="btn btn-sm inactive-btn-outline-secondary card-btn">Coming soon</button></a>
                      </div>
                   </div>
                 </div>
@@ -90,17 +125,17 @@
             </div>
             <!-- DynaUPWheel END-->
 
-i
+
             <!-- EOS3 START-->
               <div class="col-md-4">
                 <div class="card mb-4 box-shadow">
-                  <img class="card-img-top" src="../images/offcarr_demo.jpg" alt="OFFCARR EOS3 Demo">
+                  <img class="card-img-top" src="../images/800px/offcarr_demo_800.jpg" alt="OFFCARR EOS3 Demo">
                   <div class="card-body">
                     <hr style='margin-top:-1em'>
-                    <p class="card-text"><strong>OFFCARR EOS3 Demo</strong><br><br>Quick and dirty Playcanvas demo for <i>OFFCARR wheechairs</i></p>
+                    <p class="card-text"><strong>Product visualizer: OFFCARR EOS3 Prototype</strong><br><br>Quick and dirty prototype of a Playcanvas demo for <i>OFFCARR wheechairs</i></p>
                     <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
-                        <a href="../offcarr_demo.html"><button type="submit" class="btn btn-sm btn-outline-secondary">View more</button></a>
+                        <a href="offcarr_demo.html"><button type="submit" class="btn btn-sm btn-outline-secondary">Open</button></a>
                         <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
                       </div>
                       <!-- <small class="text-muted">9 mins</small> -->
@@ -113,7 +148,7 @@ i
               <!-- Reducer START-->
               <div class="col-md-4">
                 <div class="card mb-4 box-shadow">
-                  <img class="card-img-top" src="../images/riduttore800.jpg" alt="Other works">
+                  <img class="card-img-top" src="../images/800px/riduttore_800.jpg" alt="Other works">
                   <div class="card-body">
                     <hr style='margin-top:-1em'>
                     <p class="card-text"><strong>Bachelor's thesis - Gear reducer</strong><br><br>Design and geometric modeling of a gear speed reducer</p>
@@ -129,19 +164,19 @@ i
               </div>
               <!-- Reducer END-->
     
-        <div class="hr.style-one"></div>
-        <div class="blur-rule"></div>
+        <!-- <div class="hr.style-one"></div>
+        <div class="blur-rule"></div> -->
     
              <!-- Scratch START -->
               <div class="col-md-4">
                 <div class="card mb-4 box-shadow">
-                  <img class="card-img-top" src="../images/scratch.jpg" alt="Other works">
+                  <img class="card-img-top" src="../images/800px/scratch_800.jpg" alt="Other works">
                   <div class="card-body">
                     <hr style='margin-top:-1em'>
-                    <p class="card-text"><strong>Side work - Scratch minigame</strong><br><br>Wheelchair basketball: a simple Scratch minigame</p>
+                    <p class="card-text"><strong>CS50x project - Scratch minigame</strong><br><br>Wheelchair basketball: a simple Scratch minigame</p>
                     <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
-                       <a href="../scratch.html"><button type="submit" class="btn btn-sm btn-outline-secondary">Play game</button></a>
+                       <a href="scratch.html"><button type="submit" class="btn btn-sm btn-outline-secondary">Play game</button></a>
                         <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
                       </div>
                       <!-- <small class="text-muted">9 mins</small> -->
@@ -152,8 +187,26 @@ i
               <!-- Scratch END -->
     
 
-              <!-- Other START -->
+              <!-- Sled START -->
               <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                  <img class="card-img-top" src="../images/800px/sled_800.jpg" alt="Sled project">
+                  <div class="card-body">
+                    <hr style='margin-top:-1em'>
+                    <p class="card-text"><strong>Research project - Instrumented training sled</strong><br><br>All other works of mine</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                       <a href="#portfolio"><button type="submit" class="btn btn-sm inactive-btn-outline-secondary">Coming soon</button></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Sled END -->
+
+
+              <!-- Other START -->
+              <!-- <div class="col-md-4">
                 <div class="card mb-4 box-shadow">
                   <img class="card-img-top" src="../images/work_in_progress.png" alt="Other works">
                   <div class="card-body">
@@ -162,71 +215,11 @@ i
                     <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
                        <a href="other.html"><button type="submit" class="btn btn-sm inactive-btn-outline-secondary">Coming soon</button></a>
-                        <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
                       </div>
-                      <!-- <small class="text-muted">9 mins</small> -->
                     </div>
                   </div>
                 </div>
-              </div>
-              <!-- Other END -->
-
-
-              <!-- Other START -->
-              <div class="col-md-4">
-                <div class="card mb-4 box-shadow">
-                  <img class="card-img-top" src="../images/work_in_progress.png" alt="Other works">
-                  <div class="card-body">
-                    <hr style='margin-top:-1em'>
-                    <p class="card-text"><strong>Other works</strong><br><br>All other works of mine</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                       <a href="other.html"><button type="submit" class="btn btn-sm inactive-btn-outline-secondary">Coming soon</button></a>
-                        <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                      </div>
-                      <!-- <small class="text-muted">9 mins</small> -->
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Other END -->
-
-              <!-- Other START -->
-              <div class="col-md-4">
-                <div class="card mb-4 box-shadow">
-                  <img class="card-img-top" src="../images/work_in_progress.png" alt="Other works">
-                  <div class="card-body">
-                    <hr style='margin-top:-1em'>
-                    <p class="card-text"><strong>Other works</strong><br><br>All other works of mine</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                       <a href="other.html"><button type="submit" class="btn btn-sm inactive-btn-outline-secondary">Coming soon</button></a>
-                        <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                      </div>
-                      <!-- <small class="text-muted">9 mins</small> -->
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Other END -->
-
-              <!-- Other START -->
-              <div class="col-md-4">
-                <div class="card mb-4 box-shadow">
-                  <img class="card-img-top" src="../images/work_in_progress.png" alt="Other works">
-                  <div class="card-body">
-                    <hr style='margin-top:-1em'>
-                    <p class="card-text"><strong>Other works</strong><br><br>All other works of mine</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                       <a href="other.html"><button type="submit" class="btn btn-sm inactive-btn-outline-secondary">Coming soon</button></a>
-                        <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                      </div>
-                      <!-- <small class="text-muted">9 mins</small> -->
-                    </div>
-                  </div>
-                </div>
-              </div>
+              </div> -->
               <!-- Other END -->
     
     
@@ -249,13 +242,13 @@ i
 
       <footer class="footer">
         
-            <div class="col-sm-6 col-md-4 footer-navigation">
+            <div class="col-sm-6 col-md-4-contacts footer-navigation">
               <h1 class="nav">Contacts and info</h1>
             </div>
             <div class="row">
             <div class="col-sm-6 col-md-4 footer-contacts disclaimer">
                 <div><span class="fa fa-map-marker footer-contacts-icon"> </span>
-                    <p><span class="new-line-span"></span>Italy   <span class="flag-icon flag-icon-it"></span></p>
+                    <p><span class="new-line-span"></span>Italy&nbsp&nbsp&nbsp<span class="flag-icon flag-icon-it"></span></p>
                 </div>
                 <div><i class="fab footer-contacts-icon fa-linkedin"></i>
                     <p><a href="https://linkedin.com/404" target="_blank"> https://linkedin.com/404</a></p>
@@ -267,15 +260,15 @@ i
             <!-- <div class="clearfix"></div> -->
             <div class="col-md-4 footer-about disclaimer">
                 <h4>Disclaimer</h4>
-                <p>This website has been created as a project for CS50x online course</p>
-                <p><a href="https://cs50.harvard.edu/x/2023/" target="_blank">https://cs50.harvard.edu/x/2023/</a></p>
+                <p>This website has been created as a project for CS50x online course:</p>
+                <a class="white" href="https://cs50.harvard.edu/x/2023/" target="_blank">https://cs50.harvard.edu/x/2023/</a>
                 <p>Inspiration for this website and code snippets have been retrieved under fair use from various free sources which will all be attributed in future updates of the website.</p>
                 <p>All rights reserved to the respective owners.</p>
                 <p>All pictures are my own work.</p>
                 <br>
                 <br>
                 <br>
-                <p>Last updated 28 May 2023</p>
+                <p>Last updated: June 2023</p>
             </div>
         </div>
     </footer>
@@ -293,13 +286,8 @@ i
 
     </section>
   </main>
-
-</body>
-<body>
-
-<script src='../jquery.js'></script>
-<script id="rendered-js" src='../navbar.js'></script>
-
+  <script src='../jquery.js'></script>
+  <script id="rendered-js" src='../navbar.js'></script>
 </body>
 
 </html>

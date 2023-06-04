@@ -49,12 +49,13 @@ section {
   background: rgb(17,17,17);
   background: linear-gradient(110deg, rgba(17,17,17,1) 0%, rgba(17,17,17,1) 50%, rgba(34,34,34,1) 70%, rgba(17,17,17,1) 100%); 
 }
-  #about {
+
+#about {
   background-color: #aaa;
 }
 
 #portfolio {
-  background-color: #eee;
+  background-color: #333;
   }
 
 #contacts {
@@ -81,8 +82,9 @@ section {
 /* Inset, by Dan Eden */
 
 hr.style-six {
-  border: 0;
-  height: 0;
+  /* border: 10;
+  height: 10; */
+  border-style: none;
   /* border-top: 1px solid rgba(0, 0, 0, 0.1); */
   /* border-bottom: 10px solid rgba(255, 255, 255, 0.3); */
 }
@@ -97,7 +99,7 @@ hr.style-six {
   font-weight: 400;
   font-stretch: 100%;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu1aB.woff2) format('woff2');
+  src: url(fonts/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu1aB.woff2) format('woff2');
   unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
@@ -107,7 +109,7 @@ hr.style-six {
   font-weight: 400;
   font-stretch: 100%;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2) format('woff2');
+  src: url(fonts/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 /* latin-ext */
@@ -117,7 +119,7 @@ hr.style-six {
   font-weight: 500;
   font-stretch: 100%;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu1aB.woff2) format('woff2');
+  src: url(fonts/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu1aB.woff2) format('woff2');
   unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
@@ -127,7 +129,7 @@ hr.style-six {
   font-weight: 500;
   font-stretch: 100%;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2) format('woff2');
+  src: url(fonts/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
@@ -586,6 +588,7 @@ footer {
   margin-top: 80px;
   bottom: 0;
   color: #fff;
+  font-family: "Saira Semi Condensed", sans-serif;
 }
 
 .footer-navigation h3 {
@@ -625,7 +628,7 @@ footer {
 .footer-contacts p {
   display: inline-block;
   color: #ffffff;
-  vertical-align: middle;
+  vertical-align: baseline;
 }
 
 .footer-contacts p a {
@@ -703,7 +706,7 @@ div.social-links {
 }
 
 .footer {
-  top: 25vh;
+  /* top: 25vh; */
   position: relative;
 }
 
@@ -738,4 +741,502 @@ div.social-links {
   width: 45vw;
 }
 
+.col-md-4-contacts {
+
+  flex: 0 0 auto;
+  /* width: 33.33333%; */
+
+}
+
+.footer a {
+ color: #fff;
+}
+
+
 /*-------------END Contacts-------------*/
+
+/*-------------START Album-------------*/
+
+#about {
+  background-color: #222;
+  color: #333;
+  font-family:"Lucida handwriting", "Snell Roundhand", "Helvetica Neue",Arial,Helvetica,sans-serif;
+  font-size: 16px;
+  padding-top: 5rem;
+}
+
+.amp {
+  font-family:Garamond,Baskerville,Georgia,serif !important;
+  font-style:italic;
+  font-weight:normal;
+  border: none;
+}
+
+a.polaroid {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  padding: 0.521vw 0.521vw 0.521vw 0.521vw;
+  /* width: 0.521vw; */
+  border: 1px solid #BFBFBF;
+  background-color: white;
+  z-index: 2;
+  font-size: 0.7em;
+  -webkit-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+  -moz-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+  box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+  -webkit-transition: -webkit-transform 0.5s ease-in;
+}
+a.polaroid:hover,
+a.polaroid:focus,
+a.polaroid:active {
+  z-index: 999;
+  border-color: #6A6A6A;
+  -webkit-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+  -moz-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+  box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.polaroid img {
+  margin: 0 0 0vw;
+  width: 15vw;
+  /* width: 7.813vw; */
+  /* height: 150px; */
+}
+
+a img {
+  border: none;
+  display: block;
+}
+
+.photo-album {
+  position: absolute;
+  width: 60vw;
+  margin-left: 30vw;
+  /* max-width: 60vw; */
+  height: 90vh
+  /* margin-top: 15em; */
+  /* min-width: 800px;
+  max-width: 900px; */
+}
+.photo-album .polaroid {
+  position: absolute;
+}
+
+/* .photo-album h1 {
+  position: absolute;
+  z-index: 5;
+  top: 150px;
+  text-align: center;
+  width: 100%;
+  line-height: 1.9;
+}
+.photo-album h1 span {
+  background-color: white;
+  font-family: "Helvetica Neue",Arial,Helvetica,sans-serif;
+  padding: 0.4em 0.8em 0.3em 0.8em;
+  -webkit-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+  -moz-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+  box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+  border: 1px solid #6A6A6A; 
+}*/
+
+.photo-album .small {
+  width: 10vw;
+  padding: 0.313vw 10.313vw 0.313vw 0.313vw;
+  font-size: 0.6em;
+}
+.photo-album .small img {
+  width: 10vw;
+
+}
+.photo-album .medium {
+  width: 10.417vw;
+  padding: 0.677vw 10.677vw 0.677vw 0.677vw;
+  font-size: 0.8em;
+}
+.photo-album .medium img {
+  width: 10.417vw;
+  /* height: 50; */
+}
+.photo-album .large {
+  width: 15vw;
+  padding: 0.521vw 15.521vw 0.521vw 0.521vw;
+  font-size: 1em;
+}
+.photo-album .large img {
+  width: 15vw;
+  /* height: auto; */
+}
+/* fiori */
+.photo-album .img1 {
+  bottom: 10vh;
+  right: 15vw;
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
+/* fiat */
+.photo-album .img2 {
+  top: 5vh;
+  right: 1vw;
+  -webkit-transform: rotate(-4deg);
+  -moz-transform: rotate(-4deg);
+  transform: rotate(-4deg);
+}
+/* messerschmitt */
+.photo-album .img3 {
+  left: 12vw;
+  top: 2vh;
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  transform: rotate(5deg);
+}
+/* frecce */
+.photo-album .img4 {
+  top: 8vh;
+  left: 27vw;
+  -webkit-transform: rotate(-15deg);
+  -moz-transform: rotate(-15deg);
+  transform: rotate(-15deg);
+}
+/* merzario */
+.photo-album .img5 {
+  bottom: 10vh;
+  right: 0;
+  -webkit-transform: rotate(1deg);
+  -moz-transform: rotate(1deg);
+  transform: rotate(1deg);
+}
+/* minardi */
+.photo-album .img6 {
+  bottom: 35vh;
+  right: 15vw;
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+  transform: rotate(2deg);
+}
+/* gp2 */
+.photo-album .img7 {
+  bottom: 45vh;
+  left: 13vw;
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
+/* kart */
+.photo-album .img8 {
+  bottom: 35vh;
+  left: 45vw;
+  -webkit-transform: rotate(-8deg);
+  -moz-transform: rotate(-8deg);
+  transform: rotate(-8deg);
+}
+/* imola */
+.photo-album .img9 {
+  bottom: 15vh;
+  left: 12vw;
+  -webkit-transform: rotate(-8deg);
+  -moz-transform: rotate(-8deg);
+  transform: rotate(-8deg);
+}
+.photo-album .img10 {
+  top: 0;
+  left: 1.042vw;
+  -webkit-transform: rotate(8deg);
+  -moz-transform: rotate(8deg);
+  transform: rotate(8deg);
+}
+.photo-album .img11 {
+  top: 0;
+  right: 0;
+  -webkit-transform: rotate(-8deg);
+  -moz-transform: rotate(-8deg);
+  transform: rotate(-8deg);
+}
+.photo-album .img12 {
+  top: 0;
+  left: 35.417vw;
+  -webkit-transform: rotate(18deg);
+  -moz-transform: rotate(18deg);
+  transform: rotate(18deg);
+}
+.photo-album .img13 {
+  bottom: -1.042vw;
+  right: 32.813vw;
+  -webkit-transform: rotate(4deg);
+  -moz-transform: rotate(4deg);
+  transform: rotate(4deg);
+}
+.photo-album .img14 {
+  top: 4.688vw;
+  left: 22.396vw;
+  -webkit-transform: rotate(15deg);
+  -moz-transform: rotate(15deg);
+  transform: rotate(15deg);
+}
+.photo-album .img15 {
+  left:9.167vw;
+  top:1.042vw;
+  -webkit-transform: rotate(-8deg);
+  -moz-transform: rotate(-8deg);
+  transform: rotate(-8deg);
+}
+
+a:hover,
+a:focus {
+  z-index: 5;
+}
+
+.album-text {
+  padding-top: 15vh;
+  width: 30vw;
+  font-family: "Saira Semi Condensed", sans-serif;
+}
+
+  h1.album {
+    font-weight: 300;
+    font-size: 3em;
+    line-height: 0.75em;
+    color: #fff;
+  }
+
+@media (max-width:960px) {
+
+
+  .polaroid img {
+    margin: 0 0 0vw;
+    width: 15vw;
+    /* width: 7.813vw; */
+    /* height: 150px; */
+  }
+  
+  a img {
+    border: none;
+    display: block;
+  }
+  
+  .photo-album {
+    position: absolute;
+    width: 60vw;
+    margin-left: 30vw;
+    /* max-width: 60vw; */
+    height: 90vh
+    /* margin-top: 15em; */
+    /* min-width: 800px;
+    max-width: 900px; */
+  }
+  .photo-album .polaroid {
+    position: absolute;
+  }
+  
+  /* .photo-album h1 {
+    position: absolute;
+    z-index: 5;
+    top: 150px;
+    text-align: center;
+    width: 100%;
+    line-height: 1.9;
+  }
+  .photo-album h1 span {
+    background-color: white;
+    font-family: "Helvetica Neue",Arial,Helvetica,sans-serif;
+    padding: 0.4em 0.8em 0.3em 0.8em;
+    -webkit-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+    -moz-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+    box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+    border: 1px solid #6A6A6A; 
+  }*/
+  
+  .photo-album .small {
+    width: 10vw;
+    padding: 0.313vw 10.313vw 0.313vw 0.313vw;
+    font-size: 0.6em;
+  }
+  .photo-album .small img {
+    width: 10vw;
+  
+  }
+  .photo-album .medium {
+    width: 10.417vw;
+    padding: 0.677vw 10.677vw 0.677vw 0.677vw;
+    font-size: 0.8em;
+  }
+  .photo-album .medium img {
+    width: 10.417vw;
+    /* height: 50; */
+  }
+  .photo-album .large {
+    width: 15vw;
+    padding: 0.521vw 15.521vw 0.521vw 0.521vw;
+    font-size: 1em;
+  }
+  .photo-album .large img {
+    width: 15vw;
+    /* height: auto; */
+  }
+  /* fiori */
+  .photo-album .img1 {
+    bottom: 10vh;
+    right: 15vw;
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    transform: rotate(10deg);
+  }
+  /* fiat */
+  .photo-album .img2 {
+    top: 12vh;
+    right: 1vw;
+    -webkit-transform: rotate(-4deg);
+    -moz-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+  }
+  /* messerschmitt */
+  .photo-album .img3 {
+    left: 12vw;
+    top: 17vh;
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    transform: rotate(5deg);
+  }
+  /* frecce */
+  .photo-album .img4 {
+    top: 23vh;
+    left: 30vw;
+    -webkit-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+  }
+  /* merzario */
+  .photo-album .img5 {
+    bottom: 20vh;
+    right: 0;
+    -webkit-transform: rotate(1deg);
+    -moz-transform: rotate(1deg);
+    transform: rotate(1deg);
+  }
+  /* minardi */
+  .photo-album .img6 {
+    bottom: 35vh;
+    right: 15vw;
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    transform: rotate(2deg);
+  }
+  /* gp2 */
+  .photo-album .img7 {
+    bottom: 45vh;
+    left: 13vw;
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+  }
+  /* kart */
+  .photo-album .img8 {
+    bottom: 40vh;
+    left: 45vw;
+    -webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+  }
+  /* imola */
+  .photo-album .img9 {
+    bottom: 20vh;
+    left: 12vw;
+    -webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+  }
+  .photo-album .img10 {
+    top: 0;
+    left: 1.042vw;
+    -webkit-transform: rotate(8deg);
+    -moz-transform: rotate(8deg);
+    transform: rotate(8deg);
+  }
+  .photo-album .img11 {
+    top: 0;
+    right: 0;
+    -webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+  }
+  .photo-album .img12 {
+    top: 0;
+    left: 35.417vw;
+    -webkit-transform: rotate(18deg);
+    -moz-transform: rotate(18deg);
+    transform: rotate(18deg);
+  }
+  .photo-album .img13 {
+    bottom: -1.042vw;
+    right: 32.813vw;
+    -webkit-transform: rotate(4deg);
+    -moz-transform: rotate(4deg);
+    transform: rotate(4deg);
+  }
+  .photo-album .img14 {
+    top: 4.688vw;
+    left: 22.396vw;
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    transform: rotate(15deg);
+  }
+  .photo-album .img15 {
+    left:9.167vw;
+    top:1.042vw;
+    -webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+  }
+  
+  a:hover,
+  a:focus {
+    z-index: 5;
+  }
+  
+  .album-text {
+    padding-top: 0vh;
+    width: 35vw;
+    font-family: "Saira Semi Condensed", sans-serif;
+  }
+  
+  h1.album {
+    font-weight: 300;
+    font-size: 3em;
+    line-height: 0.75em;
+    color: #fff;
+  }
+}
+/*-------------END Album-------------*/
+
+
+/*-------------START Iframe-------------*/
+.h_iframe iframe {
+  width:80vw;
+  height:90vh;
+  /* height:calc(100% - 75px); */
+  padding-top: 2rem;
+}
+.h_iframe {
+  height: 100%;
+}
+.element{
+  width:100%;
+  height:70px;
+  /* background:red; */
+}
+/*-------------END Iframe-------------*/
+
+#offcarr_demo{
+background:white;
+}
+
+
+/* #bachelor_thesis {
+  background-color: #000;
+  overflow-y: hidden;
+  max-height: 100vh;
+} */

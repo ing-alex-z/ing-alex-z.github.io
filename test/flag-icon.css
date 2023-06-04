@@ -1,3 +1,5 @@
+/* site: https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.3/flags/4x3/ */
+
 .flag-icon-background {
     background-size: contain;
     background-position: 50%;
@@ -631,7 +633,7 @@
 }
 
 .flag-icon-gb {
-    background-image: url(../flags/4x3/gb.svg)
+    background-image: url(flags/4x3/gb.svg)
 }
 
 .flag-icon-gb.flag-icon-squared {
@@ -895,7 +897,7 @@
 }
 
 .flag-icon-it {
-    background-image: url(../flags/4x3/it.svg)
+    background-image: url(flags/4x3/it.svg)
 }
 
 .flag-icon-it.flag-icon-squared {
