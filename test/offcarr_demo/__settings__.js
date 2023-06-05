@@ -8,7 +8,7 @@ window.CONTEXT_OPTIONS = {
     'preferWebGl2': true,
     'powerPreference': "default"
 };
-window.SCRIPTS = [ 137651574, 137651575, 137651576, 137651577, 137651916, 137653412, 137653414 ];
+window.SCRIPTS = [ 137651574, 137651575, 137651576, 137651577, 137651916, 137653412, 137653414, 137784743, 137784745, 137789361, 137789514 ];
 window.CONFIG_FILENAME = "config.json";
 window.INPUT_SETTINGS = {
     useKeyboard: true,
@@ -18,4 +18,5 @@ window.INPUT_SETTINGS = {
 };
 pc.script.legacy = false;
 window.PRELOAD_MODULES = [
+    {'moduleName' : 'DracoDecoderModule', 'glueUrl' : 'files/assets/137668889/1/draco.wasm.js', 'wasmUrl' : 'files/assets/137668890/1/draco.wasm.wasm', 'fallbackUrl' : 'files/assets/137668888/1/draco.js', 'preload' : true},
 ];
